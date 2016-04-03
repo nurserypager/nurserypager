@@ -98,6 +98,10 @@ a.navbar-brand {
   }
 }
 
+.dropdown-right.open a#dropdownMenu {
+    background-color: #6FDCFA;
+}
+
 @media (min-width: 979px) {
   ul.nav li.dropdown-right:hover > ul.dropdown-menu {
     display: block;
