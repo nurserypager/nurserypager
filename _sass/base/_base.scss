@@ -447,12 +447,12 @@ a>span.bubble {
 
 #features .btn.btn-lg.btn-outline {
   font-size: 20px;
-  background: #ea7c76;
+  background: #E8542E;
 
   &:hover {
-    background: #e6635c;
-    border-color: #f5c4c1;
+    background: #fff;
     text-decoration: none;
+    color: #E8542E!important;
   }
 }
 
@@ -467,12 +467,24 @@ a>span.bubble {
 
 
 .wrapper-2.is-red {
-    background-color: #e86f69;
+    background-color: #374A81;
     color: #fff;
 }
 
 .is-yellow {
   background-color: #F7F770;
+}
+
+.is-yellow #homeBottomTextBtn {
+  color: #8C3A1D;
+  border: solid 2px #FFF;
+  background: #FFD05B;
+
+  &:hover {
+    color: #FFD05B;
+    background: white;
+    border: solid 2px #FFF;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -488,7 +500,7 @@ a>span.bubble {
 }
 
 .features-module a {
-    color: #fff !important;
+    color: #fff;
 }
 
 @media screen and (min-width: 481px) {
@@ -574,7 +586,7 @@ dl.is-row .bubble {
 }
 
 .bubble.is-red {
-    background-color: #e45a53;
+    background-color: #374A81;
     color: #fff;
 }
 a>span.bubble {
@@ -606,7 +618,7 @@ footer ul {
 
 footer ul.footer-country {
   float: left;
-  padding-right: 50px;
+  padding-right: 15%;
 }
 
 footer a.btn {
