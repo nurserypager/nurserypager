@@ -1,0 +1,12 @@
+/*!
+ * Base Styles for nurserypager.com
+ */
+
+@media (min-width: 1200px)
+.container {
+  width: 1250px;
+}
+
+.navbar-brand {
+  padding: 18.5px 15px 20.5px;
+}

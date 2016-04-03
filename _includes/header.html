@@ -1,0 +1,237 @@
+{% comment %} 
+<!--
+  Header
+
+  This partial is included on every page except to consistently
+  display the same header on each page.
+  
+--> 
+{% endcomment %}
+
+{% assign header = site.data.header-footer-content.header %}
+{% assign current_page = page.url %}
+{% assign active_link = page.breadcrumb | append: "/" | prepend: "/" %}
+
+    <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">{{ header.logo-title }}</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+
+                    {% for menu_item in header.menu %}
+                    <li class="page-scroll">
+                        <a href="{{ menu_item.url }}">{{ menu_item.title }}</a>
+                    </li>
+
+                    {% endfor %}
+
+                    <li class="dropdown-right"><a href="#" class="dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">More<span class="caret"></span></a>
+                      <ul role="menu" class="dropdown-menu" aria-labelledby="dropdownMenu">
+                        <li><a href="/guides/">Buy</a></li>
+                        <li><a href="/partners/">Help Docs</a></li>
+                        <li><a href="/examples/">Blog</a></li>
+                      </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="page-scroll">
+                        <a href="/login/">Login</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+  </header>
+
+    <!-- hero section -->
+
+    <div id="homeHero" class="home-hero is-red is-cloud-scene1 home-hero-2-btn">
+      <section class="container">
+        <h1>Simplifing, growing and protecting your church</h1>
+        <div class="row" style="padding-bottom: 160px;">
+          <div class="col-xs-6 text-right">
+              <a href="#" class="btn btn-lg btn-outline">
+                  <i class="glyphicon glyphicon-hand-right"></i> Start Free Trial
+              </a>
+          </div>
+          <div class="col-xs-6 text-left">
+              <a href="#textBlockEasy" class="btn btn-lg btn-outline">
+                  <i class="glyphicon glyphicon-play-circle"></i> Watch video
+              </a>
+          </div>
+        </div>
+        <div class="row" style="padding: 0px 0px 25px;">
+          <div class="col-xs-12 text-center">
+            <a href="#textBlockEasy" data-cta="" id="ctaHomeArrow" class="icon-expand22 down-arrow" style="font-size: 30px;color: #fff;"><i class="glyphicon glyphicon-menu-down"></i></a>
+          </div>
+        </div>
+        <img data-svg-fallback="" src="/img/elephant.png" style="position: absolute;bottom: -30px;right: 78px;width: 300px;height: 247px;" class="elephant">
+        <img class="cloud cloud__1 is-active" src="/img/clouds/cloud-05.svg">
+        <img class="cloud cloud__2 is-active" src="/img/clouds/cloud-10.svg">
+        <img class="cloud cloud__3 is-active" src="/img/clouds/cloud-08.svg">
+        <img class="cloud cloud__4 is-active" src="/img/clouds/cloud-09.svg">
+      </section>
+    </div>
+
+    <!-- section 1 -->
+
+    <div id="textBlockEasy" class="text-block is-blue">
+      <section class="container text-center">
+        <h2>Does Nursery Pager page parents?<br>Of course. But it does <span>way</span> more.</h2>
+        <p>Do your church nursery pagers provide after service follow up, new visitor welcome pacakges, secured child check ins, audit trails and silent church-wide alarms? Of course not -- they just vibrate.</p>
+
+        <div id="overlay" class="overlay"></div>
+        <div class="wrapper">
+          <img id="video1" class="loadVideo" src="/img/videoplayer.jpg" />
+          <video id="video1player" controls class="videoPlayer">
+            <source src="{{ site.baseurl }}/videos/SampleVideo_1280x720_10mb.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'>
+            <source src="https://videoUrl/file.webm" type='video/webm; codecs="vp8, vorbis"' />
+            Video not supported.
+          </video>
+          <div class="playpause"></div>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- section 2 -->
+
+    <div id="flow" class="wrapper-2 is-grey flow-module">
+      <section>
+        <dl class="is-row">
+          <a href="/demo"><span class="bubble is-blue icon-form arrow-after"></span></a>
+          <dt><a href="/demo">Create A Form!</a></dt>
+          <dd>Use our easy form builder to customize and design your form.</dd>
+        </dl>
+        <dl class="is-row">
+          <a href="/features/#feature3"><span class="bubble is-blue icon-share4 arrow-after"></span></a>
+          <dt><a href="/features/#feature3">Share It!</a></dt>
+          <dd>Link to our pages.  Embed on your site.  Or use our REST API.</dd>
+        </dl>
+        <dl class="is-row">
+          <a href="/features/#feature15"><span class="bubble is-blue icon-mobile26"></span></a>
+          <dt><a href="/features/#feature15">Get Your Data!</a></dt>
+          <dd>We can email or text you as data comes in. Or set up a real-time report!</dd>
+        </dl>
+      </section>
+    </div>
+
+    <!-- section 3 -->
+
+    <div id="textBlockFeatures" class="text-block is-red">
+      <section class="container text-center">
+      <h2>Wufoo has the&nbsp;<span>features&nbsp;</span>you love.</h2>
+      <p>Our form builder gives you an award-winning interface, easy customization, galleries, templates and reporting!</p>
+    </section>
+    </div>
+
+    <!-- section 4 -->
+
+    <div id="features" class="wrapper-2 is-red features-module">
+      <section class="text-center">
+        <dl class="is-row">
+          <a href="/gallery/templates/"><span class="bubble is-red icon-painter11"></span></a>
+          <dt><a href="/gallery/templates/">Form Templates</a></dt>
+          <dd>Choose from 300+ templates.  Exactly how you want them.  Ready to be customized.</dd>
+        </dl>
+        <dl class="is-row">
+          <a href="/features/#feature9"><span class="bubble is-red icon-business68"></span></a>
+          <dt><a href="/features/#feature9">Reporting</a></dt>
+          <dd>Create dynamic visualizations made up of your own graphs, charts and key metrics.</dd>
+        </dl>
+        <dl class="is-row">
+          <a href="/features/#feature5"><span class="bubble is-red icon-split4"></span></a>
+          <dt><a href="/features/#feature5">Custom Rules</a></dt>
+          <dd>Use rules to create dynamic forms that will follow logic that you've specified.</dd>
+        </dl>
+        <dl class="is-row">
+          <a href="/payments/"><span class="bubble is-red icon-creditcard3"></span></a>
+          <dt><a href="/payments/">Take Payments</a></dt>
+          <dd>Start accepting online payments with a Wufoo powered form within minutes.</dd>
+        </dl>
+      </section>
+      <div style="width:100%;padding-bottom:100px" class="text-center">
+        <a href="#textBlockEasy" class="btn btn-lg btn-outline">See More Features</a>
+      </div>
+    </div>
+
+    <!-- section 5 -->
+
+    <div class="container no-mobile">
+      <section class="row">
+        <div class="col-12 text-center">
+          <h2 class="callout">Testimonials</h2>
+<section id="carousel">           
+  <div class="container">
+    <div class="row">
+      <div class="quote col-md-2" style="padding: 10px 0px 0px"><i class="fa fa-quote-left fa-5x" style="font-size:8em"></i></div>
+      <div class="col-md-8">
+        <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+          <!-- Carousel indicators -->
+                  <ol class="carousel-indicators">
+            <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+            <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+          </ol>
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="active item">
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi.</p>
+              </blockquote>
+              <p class="text-right">— Pastor John S., First Baptist, CA</p>
+            </div>
+            <div class="item">
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi.</p>
+              </blockquote>
+              <p class="text-right">— Pastor John S., First Baptist, CA</p>
+            </div>
+            <div class="item">
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi.</p>
+              </blockquote>
+              <p class="text-right" style="">— Pastor John S., First Baptist, CA</p>
+            </div>
+          </div>
+        </div>
+      </div>              
+    </div>
+  </div>
+</section>
+        </div>
+      </section>
+    </div>
+
+
+    <div class="wrapper is-yellow is-cloud-scene2">
+      <section class="text-center">
+        <h3 style="font-size: 28px;font-weight: 300;line-height: 30px;">Ready to get Started?&nbsp;<span>It's Free!</span></h3>
+        <div class="btn-row">
+          <a href="#" id="homeBottomTextBtn" class="btn btn-lg btn-outline" style="color: #8C3A1D;border: solid 2px #FFD05B;">Sign Up Now</a>
+        </div>
+        <img class="cloud cloud__1 is-active" src="/img/clouds/cloud-05.svg">
+        <img class="cloud cloud__2 is-active" src="/img/clouds/cloud-10.svg">
+        <img class="cloud cloud__3 is-active" src="/img/clouds/cloud-08.svg">
+        <img class="giraffe" src="/img/giraffe.png">
+      </section>
+    </div>
