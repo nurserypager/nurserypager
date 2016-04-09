@@ -995,6 +995,14 @@ section.no-bot-pad {
     background: #06B5E7;
   }
 }
+.title-box-2 {
+  background: #F8FAFB;
+  padding: 1.667em;
+  text-align: center;
+  margin-bottom: 1.667em;
+  overflow: hidden;
+
+}
 .buy-link {
   color:#000;
   text-decoration:none;
@@ -1028,5 +1036,34 @@ section.no-bot-pad {
   }
   p.card-description {
         font-size: 14px;
+  }
+}
+
+
+//help home
+.hero .hero__image {
+  text-align: right;
+  padding-right: 100px;
+}
+.btn-outline-help {
+    color: #56D6FA;
+    font-size: 20px;
+    border: solid 2px #56D6FA;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    margin: 15px 20px 0px 0px;
+
+  &:hover {
+    background: #56D6FA;
+    color: #fff;
+  }
+}
+.help-home-list {
+  li a {
+    color: #28acd8;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
   }
 }
