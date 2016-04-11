@@ -1,0 +1,13 @@
+// Base Typography Classes
+
+// Main fonts used in site
+@font-face{
+  font-family:"wufoo-v4";
+  src:url("/fonts/wufoo-v4.eot");
+  src:url("/fonts/wufoo-v4.eot?#iefix") format("eot"),
+      url("/fonts/wufoo-v4.woff") format("woff"),
+      url("/fonts/wufoo-v4.ttf") format("truetype"),
+      url("/fonts/wufoo-v4.svg#wufoo-v4") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}

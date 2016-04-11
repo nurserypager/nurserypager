@@ -1,0 +1,60 @@
+// Contains carousel component as seen on homepage
+
+section#carousel {
+  padding: 25px 0px 0px;
+
+  div.quote {
+    padding: 10px 0px 0px;
+
+    .fa.fa-quote-left {
+      font-size:8em;
+    }
+  }
+}
+
+#fade-quote-carousel {
+
+  &.carousel {
+    padding-bottom: 60px;
+
+    .carousel-inner .item {
+      opacity: 0;
+      -webkit-transition-property: opacity;
+          -ms-transition-property: opacity;
+              transition-property: opacity;
+    }
+
+    .carousel-inner .active {
+      opacity: 1;
+      -webkit-transition-property: opacity;
+          -ms-transition-property: opacity;
+              transition-property: opacity;
+    }
+
+    .carousel-indicators {
+      bottom: 10px;
+
+      > li {
+        background-color: #06B5E7;
+        border: none;
+      }
+    }
+  }
+
+  blockquote {
+    text-align: left;
+    border: none;
+    font-style: italic;
+  }
+
+  p.text-right {
+    font-size:12px;
+  }
+
+  .profile-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+  }
+}

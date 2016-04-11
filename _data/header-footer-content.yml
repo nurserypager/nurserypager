@@ -6,95 +6,126 @@ header:
     url:   "/features/"
   - title: "Pricing"
     url:   "/pricing/"
-  ctas:
-  -
-    link: "/contribute/" 
-    h2: "Help us grow and improve"
-    h3: "Contribute to M-Lab"
-    class: "assist-cta"
-  -
-    link: "https://github.com/m-lab/mlab-wikis" 
-    h2: "Read about our projects"
-    h3: "Research Wiki"
-    class: "learn-cta"
-  category: 
+  - title: "More"
+    submenu:
+    - title: "Buy"
+      url: "/buy/"
+    - title: "Help Docs"
+      url: "/help/"
+    - title: "Blog"
+      url: "/blog/"
+homepage:
+  hero:
+    header: "Simplifing, growing and protecting your church"
+    ctas:
     -
-      title: "about"
-      sub-nav:
-        - text: "What is Measurement Lab?"
-          url:  "/about/"
-        - text: "FAQ"
-          url:  "/faq/"
-        - text: "Who we are"
-          url:  "/who/"
-        - text: "Contact"
-          url:  "/contact/"
+      link: "#" 
+      title: "Start Free Trial"
+      class: "text-right"
+      icon: "glyphicon-hand-right"
     -
-      title: "data"
-      sub-nav:
-        - text: "Overview"
-          url:  "/data/"
-        - text: "Google Cloud Storage"
-          url:  "/data/gcs/"
-        - text: "BigQuery QuickStart"
-          url:  "/data/bq/quickstart/"
-        - text: "BigQuery Examples"
-          url:  "/data/bq/examples/"
-        - text: "BigQuery Schema"
-          url:  "/data/bq/schema/"
+      link: "#textBlockEasy" 
+      title: "Watch video"
+      class: "text-left"
+      icon: "glyphicon-play-circle"
+  textBlockEasy:
+    content: 
+      header: "Does Nursery Pager page parents?<br>Of course. But it does <span>way</span> more."
+      desc: "Do your church nursery pagers provide after service follow up, new visitor welcome pacakges, secured child check ins, audit trails and silent church-wide alarms? Of course not -- they just vibrate"
+      video: "/videos/SampleVideo_1280x720_10mb.mp4"
+  flow:
+    bubbles:
     -
-      title: "visualizations"
-      sub-nav:
-        - text: "Performance"
-          url:  "/visualizations/"
-        - text: "Transparency"
-          url:  "/transparency/"
-        - text: "State"
-          url:  "/state/"
+      icon: "icon-form"
+      title: "Create A Form!"
+      link: "#"
+      desc: "Use our easy form builder to customize and design your form."
+    -
+      icon: "icon-share4"
+      title: "Share It!"
+      link: "#"
+      desc: "Link to our pages.  Embed on your site.  Or use our REST API."
+    -
+      icon: "icon-mobile26"
+      title: "Get Your Data!"
+      link: "#"
+      desc: "We can email or text you as data comes in. Or set up a real-time report!"
+  textBlockFeatures:
+    content: 
+      header: "Wufoo has the <span>features </span>you love."
+      desc: "Our form builder gives you an award-winning interface, easy customization, galleries, templates and reporting!"
+  features:
+    cta-title: "See More Features"
+    cta-link: "#textBlockEasy"
+    bubbles:
+    -
+      icon: "icon-painter11"
+      title: "Form Templates"
+      link: "#"
+      desc: "Choose from 300+ templates.  Exactly how you want them.  Ready to be customized."
+    -
+      icon: "icon-business68"
+      title: "Reporting"
+      link: "#"
+      desc: "Create dynamic visualizations made up of your own graphs, charts and key metrics."
+    -
+      icon: "icon-split4"
+      title: "Custom Rules"
+      link: "#"
+      desc: "Use rules to create dynamic forms that will follow logic that you've specified."
+    -
+      icon: "icon-creditcard3"
+      title: "Take Payments"
+      link: "#"
+      desc: "Start accepting online payments with a Wufoo powered form within minutes."
+  carousel:
+    content: 
+      header: "Testimonials"
+      items:
+      -
+        quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi."
+        author: "Pastor John S., First Baptist, CA"
+      -
+        quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi."
+        author: "Pastor John S., First Baptist, CA"
+      -
+        quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi."
+        author: "Pastor John S., First Baptist, CA"
+  signup:
+    content:
+      header: "Ready to get Started? <span>It's Free!</span>"
+      desc: "Sign Up Now"
 footer:
-  subscribe:
-    title: "Subscribe for M-Lab updates"
+  col-one:
+    header: "About"
     items:
-    -
-      link: "https://groups.google.com/a/measurementlab.net/forum/?fromgroups#!forum/discuss"
-      link-title: "Google"
-      link-class: "google-share"
-    -
-      link: "mailto:support@measurementlab.net?subject=Inquiry about Measurement Lab"
-      link-title: "Email"
-      link-class: "email-share"
-    -
-      link: "/feed.xml"
-      link-title: "RSS"
-      link-class: "rss-share"
-  other-links:
-    column-one:
-      items:
-      -
-        link: "/about/"
-        link-title: "About Us"
-      -
-        link: "/contact/"
-        link-title: "Contact"
-      -
-        link: "/faq/"
-        link-title: "FAQ"
-      -
-        link: "/blog/"
-        link-title: "Blog"
-    column-two:
-      items:
-      -
-        link: "/privacy"
-        link-title: "Privacy Policy"
-      -
-        link: "/terms/"
-        link-title: "Terms"
-      -
-        link: "/feed.xml"
-        link-title: "RSS Feed"
-  privacy:
-    title: "Privacy Policy &amp; Acceptable Use Policy."
-    link: "/privacy/"
-    blurb: "All original material on Measurement Lab by New America Foundation is licensed under a <a href=\"http://creativecommons.org/licenses/by-nc-sa/3.0/us/\" target=\"_blank\">Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License.</a> M-Lab is a <a href=\"/who/\">collaborative effort</a> led by researchers in partnership with companies and other institutions."
-  mobile-error-msg: "For a fuller experience of data visualisation please visit our desktop site."
+    - title: "About"
+      url: "#"
+    - title: "Pricing"
+      url: "#"
+    - title: "Features"
+      url: "#"
+    - title: "Help Docs"
+      url: "#"
+    - title: "Change Log"
+      url: "#"
+  col-two:
+    header: "Countries"
+    items:
+    - title: "United States"
+      url: "#"
+    - title: "Canada"
+      url: "#"
+    - title: "United Kingdom"
+      url: "#"
+  col-three:
+    header: ""
+    items:
+    - title: "Brazil"
+      url: "#"
+    - title: "Germany"
+      url: "#"
+    - title: "Australia"
+      url: "#"
+    - title: "More"
+      url: "#"

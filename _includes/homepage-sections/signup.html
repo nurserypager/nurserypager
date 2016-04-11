@@ -1,0 +1,24 @@
+{% comment %} 
+<!--
+  Signup Section
+
+  This partial can be included in any markdown or template file that needs a signup section.
+  Currently, this include has been referenced in the homepage template.
+
+--> 
+{% endcomment %}
+
+{% assign mod_content = site.data.header-footer-content.homepage.signup.content %}
+
+<div class="wrapper is-yellow is-cloud-scene2">
+  <section class="text-center">
+    <h3 class="signup-header">{{ mod_content.header }}</h3>
+    <div class="btn-row">
+      <a href="#" id="homeBottomTextBtn" class="btn btn-lg btn-outline">{{ mod_content.desc }}</a>
+    </div>
+    <img class="cloud cloud__1 is-active" src="/img/clouds/cloud-05.svg">
+    <img class="cloud cloud__2 is-active" src="/img/clouds/cloud-10.svg">
+    <img class="cloud cloud__3 is-active" src="/img/clouds/cloud-08.svg">
+    <img class="giraffe" src="/img/giraffe.png">
+  </section>
+</div>

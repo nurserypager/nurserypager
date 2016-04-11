@@ -1,0 +1,55 @@
+{% comment %} 
+<!--
+  Carousel Section
+
+  This partial can be included in any markdown or template file that needs a carousel section.
+  Currently, this include has been referenced in the homepage template.
+
+--> 
+{% endcomment %}
+
+{% assign mod_content = site.data.header-footer-content.homepage.carousel.content %}
+
+{% comment %} Get number of items in carousel {% endcomment %}
+
+{% assign car_count = 0 %}
+{% for item in mod_content.items %}
+	{% assign counter = counter | plus: 1 %}
+{% endfor %}
+
+<div class="container no-mobile">
+  <section class="row">
+    <div class="col-12 text-center">
+      <h2 class="callout">{{ mod_content.header }}</h2>
+			<section id="carousel">           
+				<div class="container">
+				  <div class="row">
+				    <div class="quote col-md-2"><i class="fa fa-quote-left fa-5x"></i></div>
+				    <div class="col-md-8">
+				      <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+				        <!-- Carousel indicators -->
+				        <ol class="carousel-indicators">
+				        	{% for item in mod_content.items %}
+				          <li data-target="#fade-quote-carousel" data-slide-to="{{ forloop.index0 }}" {% if forloop.index == 0 %}class="active"{% endif %}></li>
+				          {% endfor %}
+				        </ol>
+				        <!-- Carousel items -->
+				        <div class="carousel-inner">
+				        	{% for item in mod_content.items %}
+				          <div class="item{% if forloop.index0 == 0 %} active{% endif %}">
+				            <blockquote>
+				              <p>{{ item.quote }}</p>
+				            </blockquote>
+				            <p class="text-right">— {{ item.author }}</p>
+				          </div>
+				          {% endfor %}
+				          </div>
+				        </div>
+				      </div>
+				    </div>              
+				  </div>
+				</div>
+			</section>
+    </div>
+  </section>
+</div>

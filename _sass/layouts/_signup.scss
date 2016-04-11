@@ -1,0 +1,41 @@
+// Contains home signup layout styles
+
+.giraffe {
+  height: 320px;
+  width: 250px;
+  position: absolute;
+  bottom: -10px;
+  right: 78px;
+}
+
+.is-yellow {
+  background-color: #F7F770;
+
+  .signup-header {
+  	font-size: 28px;
+  	font-weight: 300;
+  	line-height: 30px;
+  }
+}
+
+.is-yellow #homeBottomTextBtn {
+  color: #8C3A1D;
+  border: solid 2px #FFF;
+  background: #FFD05B;
+
+  &:hover {
+    color: #FFD05B;
+    background: white;
+    border: solid 2px #FFF;
+  }
+}
+
+@media screen and (min-width: 481px) {
+.wrapper, .footer-copyright {
+    padding: 6em 1.667em;
+}
+.wrapper, .footer-copyright {
+    padding: 6em 0.667em;
+    overflow: hidden;
+}
+}

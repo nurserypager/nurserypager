@@ -35,6 +35,19 @@ $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
 
 $(document).ready(function() 
 { 
+
+size_li = $("#blogEntries li").size();
+x=4;
+$('#blogEntries li:lt('+x+')').show();
+$('#loadMore').click(function (e) {
+  e.preventDefault;
+  x= (x+4 <= size_li) ? x+4 : size_li;
+  $('#blogEntries li:lt('+x+')').show();
+  if(x == size_li) {
+    $('#loadMore').hide();
+  }
+});
+
      modals.init();
 });
 

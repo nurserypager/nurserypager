@@ -3,6 +3,25 @@
 # Only Main files contain this front matter, not partials.
 ---
 
+// Including bootstrap styles
+@import 'helpers/custom-bootstrap-variables';
+@import 'bootstrap';
+@import 'freelancer';
+
 // Including base scss eleemnts
+@import 'base/typography';
 @import 'base/base';
 
+// Including layout scss 
+@import 'layouts/header';
+@import 'layouts/home_hero';
+@import 'layouts/footer';
+@import 'layouts/help';
+@import 'layouts/signup';
+@import 'layouts/blog';
+
+// Include componets
+@import 'components/bubbles';
+@import 'components/clouds';
+@import 'components/carousel';
+@import 'components/videos';

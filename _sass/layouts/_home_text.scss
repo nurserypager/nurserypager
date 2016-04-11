@@ -1,0 +1,27 @@
+// Contains home text layout styles
+
+#textBlockEasy h2, #textBlockFeatures h2 {
+    padding: 0px 0px 25px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#textBlockEasy h2 span {
+    color: #56D8FA;
+}
+
+#textBlockFeatures  h2 span {
+    color: #e86f69;
+}
+
+#textBlockEasy p, #textBlockFeatures p {
+    color: #6D696E;
+    font-weight: 300;
+    width: 75%;
+    margin: 0px auto;
+    padding-bottom: 25px;
+}
+
+#textBlockFeatures p {
+  padding-bottom: 0px;
+}

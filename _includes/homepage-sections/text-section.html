@@ -1,0 +1,32 @@
+{% comment %} 
+<!--
+  Home Text Section
+
+  This partial can be included in any markdown or template file that needs a text section.
+  Currently, this include has been referenced in the homepage template.
+
+--> 
+{% endcomment %}
+
+{% assign mod_content = site.data.header-footer-content.homepage.[include.textID].content %}
+
+<div id="{{ include.textID }}" class="text-block">
+  <section class="container text-center">
+    <h2>{{ mod_content.header }}</h2>
+    <p>{{ mod_content.desc }}</p>
+
+    {% if mod_content.video %}
+    <div id="overlay" class="overlay"></div>
+    <div class="wrapper">
+      <img id="video1" class="loadVideo" src="/img/videoplayer.jpg" />
+      <video id="video1player" controls class="videoPlayer">
+        <source src="{{ site.baseurl }}{{ mod_content.video }}" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="{{ site.baseurl }}{{ mod_content.video }}.webm" type='video/webm; codecs="vp8, vorbis"' />
+        Video not supported.
+      </video>
+      <div class="playpause"></div>
+    </div>
+    {% endif %}
+
+  </section>
+</div>

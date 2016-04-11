@@ -1,0 +1,48 @@
+// Contains home hero layout styles
+
+.home-hero {
+  background-color: #56D6FA;
+  padding: 70px 0px 0px;
+  overflow: hidden;
+
+	h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    font-size: 46px;
+    padding: 25px 0px 25px;
+    text-transform: none;
+	}
+
+	section {
+	  position: relative;
+    padding-bottom: 0px;
+
+    .page-arrow {
+      padding: 160px 0px 25px;
+    }
+	}
+
+  #ctaHomeArrow {
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .elephant {
+    position: absolute;
+    bottom: -30px;
+    right: 78px;
+    width: 300px;
+    height: 247px;
+
+    @media screen and (max-width: 768px) {
+      display:none;
+    }
+  }
+}
+
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+    color: #56D6FA;
+    background: white;
+    border: solid 2px white;
+}

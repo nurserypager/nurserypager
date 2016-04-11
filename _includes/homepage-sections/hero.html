@@ -1,0 +1,41 @@
+{% comment %} 
+<!--
+  Home Hero Section
+
+  This partial can be included in any markdown or template file that needs a hero section.
+  Currently, this include has been referenced in the homepage template.
+
+--> 
+{% endcomment %}
+
+{% assign hero_content = site.data.header-footer-content.homepage.hero %}
+
+<div id="homeHero" class="home-hero is-cloud-scene1">
+  <section class="container">
+    <h1>{{ hero_content.header }}</h1>
+    <div class="row">
+
+      {% for btn in hero_content.ctas %}
+      <div class="col-xs-6 {{ btn.class }}">
+          <a href="{{ btn.link }}" class="btn btn-lg btn-outline">
+              <i class="glyphicon {{ btn.icon }}"></i> {{ btn.title }}
+          </a>
+      </div>
+      {% endfor %}
+
+    </div>
+    
+    <div class="row page-arrow">
+      <div class="col-xs-12 text-center">
+        <a href="#textBlockEasy" id="ctaHomeArrow"><i class="glyphicon glyphicon-menu-down"></i></a>
+      </div>
+    </div>
+    
+    <img src="/img/elephant.png" style="" class="elephant">
+    <img class="cloud cloud__1 is-active" src="/img/clouds/cloud-05.svg">
+    <img class="cloud cloud__2 is-active" src="/img/clouds/cloud-10.svg">
+    <img class="cloud cloud__3 is-active" src="/img/clouds/cloud-08.svg">
+    <img class="cloud cloud__4 is-active" src="/img/clouds/cloud-09.svg">
+  
+  </section>
+</div>

@@ -1,0 +1,30 @@
+{% comment %} 
+<!--
+  Home Flow Section
+
+  This partial can be included in any markdown or template file that needs a flow section.
+  Currently, this include has been referenced in the homepage template.
+
+--> 
+{% endcomment %}
+
+{% assign mod_content = site.data.header-footer-content.homepage.[include.sectID] %}
+
+<div id="{{ include.sectID }}" class="wrapper-2 {{ include.bgColor }} {{ include.sectID }}-module">
+  <section>
+  	{% for bubble in mod_content.bubbles %}
+    <dl class="is-row">
+      <a href="{{ bubble.link | prepend: site.baseurl }}"><span class="bubble {{ include.bubbleColor }} arrow-after {{ bubble.icon }}"></span></a>
+      <dt><a href="/demo">{{ bubble.title }}</a></dt>
+      <dd>{{ bubble.desc }}</dd>
+    </dl>
+    {% endfor %}
+  </section>
+
+  {% if mod_content.cta-title %}
+  <div style="width:100%;padding-bottom:100px" class="text-center">
+    <a href="#textBlockEasy" class="btn btn-lg btn-outline">See More Features</a>
+  </div>
+  {% endif %}
+
+</div>

@@ -1,0 +1,39 @@
+{% comment %} 
+<!--
+  Home Features Section
+
+  This partial can be included in any markdown or template file that needs a features section.
+  Currently, this include has been referenced in the homepage template.
+
+--> 
+{% endcomment %}
+
+{% assign mod_content = site.data.header-footer-content.homepage.[include.textID].content %}
+
+<div id="features" class="wrapper-2 is-red features-module">
+  <section class="text-center">
+    <dl class="is-row">
+      <a href="/gallery/templates/"><span class="bubble is-red icon-painter11"></span></a>
+      <dt><a href="/gallery/templates/">Form Templates</a></dt>
+      <dd>Choose from 300+ templates.  Exactly how you want them.  Ready to be customized.</dd>
+    </dl>
+    <dl class="is-row">
+      <a href="/features/#feature9"><span class="bubble is-red icon-business68"></span></a>
+      <dt><a href="/features/#feature9">Reporting</a></dt>
+      <dd>Create dynamic visualizations made up of your own graphs, charts and key metrics.</dd>
+    </dl>
+    <dl class="is-row">
+      <a href="/features/#feature5"><span class="bubble is-red icon-split4"></span></a>
+      <dt><a href="/features/#feature5">Custom Rules</a></dt>
+      <dd>Use rules to create dynamic forms that will follow logic that you've specified.</dd>
+    </dl>
+    <dl class="is-row">
+      <a href="/payments/"><span class="bubble is-red icon-creditcard3"></span></a>
+      <dt><a href="/payments/">Take Payments</a></dt>
+      <dd>Start accepting online payments with a Wufoo powered form within minutes.</dd>
+    </dl>
+  </section>
+  <div style="width:100%;padding-bottom:100px" class="text-center">
+    <a href="#textBlockEasy" class="btn btn-lg btn-outline">See More Features</a>
+  </div>
+</div>

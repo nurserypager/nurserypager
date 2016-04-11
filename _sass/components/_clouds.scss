@@ -1,0 +1,92 @@
+// Contains cloud background component
+
+.cloud.is-active {
+  -webkit-transform: translateX(0) translateY(0) !important;
+  -ms-transform: translateX(0) translateY(0) !important;
+  transform: translateX(0) translateY(0) !important;
+}
+
+@media screen and (min-width: 481px) {
+  .is-cloud-scene1 .cloud, .is-cloud-scene2 .cloud {
+      display: block;
+      width: 110px;
+  }
+  .is-cloud-scene1 .cloud__1 {
+      top: 10%;
+      left: -9%;
+      -webkit-transform: translateX(-1200px);
+      -ms-transform: translateX(-1200px);
+      transform: translateX(-1200px);
+  }
+  .is-cloud-scene2 .cloud__1 {
+      top: 10%;
+      left: -2%;
+      -webkit-transform: translateX(-1200px);
+      -ms-transform: translateX(-1200px);
+      transform: translateX(-1200px);
+  }
+  .is-cloud-scene1 .cloud__2 {
+      bottom: 22%;
+      left: -3%;
+      -webkit-transform: translateX(-1900px);
+      -ms-transform: translateX(-1900px);
+      transform: translateX(-1900px);
+  }
+  .is-cloud-scene2 .cloud__2 {
+      bottom: 20%;
+      left: 10%;
+      -webkit-transform: translateX(-1900px);
+      -ms-transform: translateX(-1900px);
+      transform: translateX(-1900px);
+  }
+  .is-cloud-scene1 .cloud__3 {
+      top: 5%;
+      right: -9%;
+      -webkit-transform: translateX(3000px);
+      -ms-transform: translateX(3000px);
+      transform: translateX(3000px);
+  }
+  .is-cloud-scene2 .cloud__3 {
+      top: 20%;
+      right: -3%;
+      -webkit-transform: translateX(3000px);
+      -ms-transform: translateX(3000px);
+      transform: translateX(3000px);
+  }
+  .is-cloud-scene1 .cloud__4{
+      bottom: 30%;
+      right: -5%;
+      -webkit-transform: translateX(2500px);
+      -ms-transform: translateX(2500px);
+      transform: translateX(2500px);
+  }
+  .cloud {
+      display: inherit;
+  }
+}
+
+.is-cloud-scene1 .cloud {
+    opacity: 0.15 !important;
+    position: absolute;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+}
+
+.is-cloud-scene2 .cloud {
+    opacity: 0.85 !important;
+    position: absolute;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+}
