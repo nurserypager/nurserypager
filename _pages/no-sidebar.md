@@ -20,3 +20,5 @@ More text here
 ## 2. Text Message Notifications
 
 Okay, simple email notifications are cool and all, but mobile’s all the rage these days, amirite? Well, Wufoo has you covered there too. You can setup text message notifications so that you’ll get a text whenever someone fills our your form.
+
+{% include contact-form.html %}
