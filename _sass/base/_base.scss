@@ -45,3 +45,40 @@
   color: #6D696E;
   font-weight: 300;
 }
+
+// Back to Top Button
+.btn.btn-to-top {
+  font-family: "Proxima Nova Semi Bold",Arial,Helvetica,sans-serif;
+  text-align: center;
+  position: fixed;
+  z-index: 11;
+  right: 15px;
+  bottom: -150px;
+  -webkit-transition: bottom 300ms ease-in-out,background 300ms ease-in-out;
+  -moz-transition: bottom 300ms ease-in-out,background 300ms ease-in-out;
+  -o-transition: bottom 300ms ease-in-out,background 300ms ease-in-out;
+  transition: bottom 300ms ease-in-out,background 300ms ease-in-out;
+  white-space: normal;
+
+  &:hover {
+    color: #fff;
+  }
+
+  &.is-visible {
+    bottom: 30px;
+  }
+
+  >.icon-top {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  >span {
+    position: relative;
+    top: 50px;
+  }
+
+}

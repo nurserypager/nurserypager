@@ -6,10 +6,23 @@
 
 // jQuery for page scrolling feature
 $('a').click(function(){
+  var tmpHref = $.attr(this, 'href');
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 1500);
-    return false;
+    }, 1500, function(){
+      if (tmpHref == "#textBlockEasy") {
+        $( ".playpause" ).trigger( "click" );
+      }
+    });
+});
+
+var btnToTop = $('.btn-to-top');
+$(window).scroll(function () {
+  if ( $(this).scrollTop() > 500 ) {
+    btnToTop.addClass('is-visible');
+  } else {
+    btnToTop.removeClass('is-visible');
+  }
 });
 
 // Floating label headings for the contact form
@@ -57,8 +70,8 @@ var modals =
      init:function()
      {
           $(".videoPlayer").dialog({
-               width: 576,
-               height: 324,
+               width: 'auto',
+               height: 'auto',
                autoOpen: false,
                resizable: false,
                show: {

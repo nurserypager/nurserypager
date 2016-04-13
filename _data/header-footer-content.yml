@@ -26,7 +26,7 @@ homepage:
     -
       link: "#textBlockEasy" 
       title: "Watch video"
-      class: "text-left"
+      class: "text-left watch-video"
       icon: "glyphicon-play-circle"
   textBlockEasy:
     content: 

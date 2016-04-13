@@ -1,12 +1,25 @@
 // Contains video component as seen on homepage
 
 //Videos
-.ui-dialog .ui-dialog-content
+.ui-dialog .ui-dialog-content {
+    flex: 1;
+}
+.ui-dialog
 {
-     position: relative;
+/*     position: relative;
      border: 0;
      padding: 0;
-     overflow:hidden;
+     overflow:hidden; */
+    z-index:1000000000;
+    top: 0; left: 50%;
+    margin: auto;
+     margin-left: -50px;
+    position: fixed;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 .ui-widget-content
 {
@@ -28,6 +41,10 @@
      width: 400px;
      height: 225px;
      opacity: 0.75;
+     
+    @media screen and (max-width: 481px) {
+        width:100%;
+    }
 }
 
 .video {
@@ -41,7 +58,8 @@
     padding: 25px 0px 0px 0px;
 }
 .playpause {
-    background-image:url(http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png);
+//    background-image:url(http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png);
+    background-image: url('/img/play-vid.png');
     background-repeat:no-repeat;
     width:50%;
     height:50%;
@@ -53,7 +71,7 @@
     margin:auto;
     background-size:contain;
     background-position: center;
-    opacity: 0.50;
+    opacity: 0.75;
 
   &:hover {
     cursor: pointer;

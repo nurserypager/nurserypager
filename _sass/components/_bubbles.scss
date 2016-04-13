@@ -3,6 +3,33 @@
 .is-grey, {
     background: #F8FAFB;
 }
+
+dl.is-row {
+    text-align: center;
+}
+
+.bubble {
+    display: block;
+    border: 5px solid #fff;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 80px;
+    line-height: 154px;
+    width: 154px;
+    height: 154px;
+}
+
+@media screen and (min-width: 481px) {
+dl.is-row dd, dl.is-row dt {
+    text-align: left;
+}
+}
+
 @media screen and (min-width: 769px) {
 
 dl.is-row dd, dl.is-row dt {
@@ -44,7 +71,8 @@ dl.is-row dd, dl.is-row dt {
     line-height: 100px;
     width: 100px;
     height: 100px;
-        text-align: center;
+    text-align: center;
+    font-size: 48px;
 }
 }
 
@@ -55,22 +83,6 @@ dl.is-row dd, dl.is-row dt {
 
 a>span.bubble {
     cursor: pointer;
-}
-
-.bubble {
-    display: block;
-    border: 5px solid #fff;
-    margin: 0 auto 30px;
-    border-radius: 50%;
-    overflow: hidden;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font-size: 80px;
-    line-height: 154px;
-    width: 154px;
-    height: 154px;
 }
 
 .bubble-arrow {
@@ -88,6 +100,10 @@ a>span.bubble {
     top: 0;
     right: -.5em;
     font-family: "wufoo-v4";
+}
+
+.flow-module dl:last-of-type .bubble:after {
+    content: '';
 }
 
 .bubble:before {
@@ -115,6 +131,10 @@ a>span.bubble {
     font-weight: 300;
     line-height: 28px;
     padding: 0px 50px 100px;
+
+    @media screen and (max-width: 769px) {
+      padding: 0px 50px 20px;
+    }
 }
 
 #features a {
