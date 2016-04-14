@@ -21,6 +21,11 @@ footer {
     &.footer-country {
 		  float: left;
 		  padding-right: 15%;
+
+		  @media screen and (max-width: 992px) {
+      float: none;
+      margin-bottom: 0px;
+    	}
 		}
 	}
 
@@ -33,5 +38,51 @@ footer {
 
 	.btn-social {
 	  color: #06B5E7;
+	}
+}
+
+.footer-col {
+	width: 33.3%;
+	float: left;
+
+	@media screen and (max-width:650px) {
+		width:100%;
+		float: none;
+	}
+}
+
+.footer-col.col-1 {
+	display: block;
+
+	@media screen and (max-width:650px) {
+		display: none;
+	}
+}
+
+.footer-col.col-4 {
+	display: none;
+
+	@media screen and (max-width:650px) {
+		display: block;
+	}
+}
+
+.footer-col.col-2 {
+	text-align: left;
+
+	h3, ul {
+		margin-left: 30%;
+
+		@media screen and (max-width:650px) {
+			margin-left: 15px;
+		}
+	}
+}
+
+.footer-col.col-3 {
+	text-align: left;
+
+	@media screen and (max-width:650px) {
+		margin-left: 15px;
 	}
 }

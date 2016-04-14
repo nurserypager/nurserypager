@@ -4,6 +4,7 @@
   -webkit-transform: translateX(0) translateY(0) !important;
   -ms-transform: translateX(0) translateY(0) !important;
   transform: translateX(0) translateY(0) !important;
+  display: none;
 }
 
 @media screen and (min-width: 481px) {
@@ -47,7 +48,7 @@
       transform: translateX(3000px);
   }
   .is-cloud-scene2 .cloud__3 {
-      top: 20%;
+      top: 5%;
       right: -3%;
       -webkit-transform: translateX(3000px);
       -ms-transform: translateX(3000px);
