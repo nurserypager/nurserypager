@@ -3,6 +3,13 @@
 
 //Blog Page
 
+#blog .container {
+      background-image: url('/img/blog-ph.png');
+    background-repeat: no-repeat;
+    background-position-x: 15%;
+    background-position-y: 0%;
+}
+
 #loadMore div.timeline-image {
   display: table;
 
