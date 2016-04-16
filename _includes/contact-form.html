@@ -9,6 +9,7 @@
 
 {% assign form_content = site.data.contact-form %}
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <section id="contact">
   <div class="container">
@@ -119,10 +120,10 @@
 				      <br>
 				      <div class="btn-group" data-toggle="buttons">
 				        <label class="btn active">
-				          <input type="radio" name='flag' checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> <img src="/img/flag.png"></span>
+				          <input type="radio" name='flag' checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> <img src="/img/canada.png"></span>
 				        </label>
 				        <label class="btn">
-				          <input type="radio" name='glag'><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> <img src="/img/flag.png"></span>
+				          <input type="radio" name='flag'><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> <img src="/img/unitedstates.png"></span>
 				        </label>
 				      </div>
 
@@ -143,6 +144,9 @@
 				      <input type="checkbox" name='email3'><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i><span> Account Email</span>
 				    </label>
 				  </div>
+          <br>
+				  <hr>
+				  <div class="g-recaptcha" data-sitekey="your_site_key"></div>
           <br>
 				  <hr>
 				  <br>

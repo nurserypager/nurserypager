@@ -3,8 +3,16 @@
 .help-hero {
   padding: 140px 0 100px;
 
+  @media screen and (max-width: $screen-md-min) {
+    padding: 90px 0 100px;
+  }
+
   h1 {
     text-transform: capitalize;
+
+    @media screen and (max-width: $screen-md-min) {
+      text-align: center;
+    }
   }
 
   p {
@@ -21,6 +29,18 @@
       width: 70%;
       text-align: right;
       padding-bottom: 100px;
+
+      @media screen and (max-width: $screen-md-min) {
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  #cta-hero {
+
+    @media screen and (max-width: $screen-md-min) {
+      text-align: center;
+      padding-bottom: 75px;
     }
   }
 }
