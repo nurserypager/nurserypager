@@ -1,69 +1,68 @@
 // Bubble sections
 
 .is-grey, {
-    background: #F8FAFB;
+  background: #F8FAFB;
 }
 
 dl.is-row {
-    text-align: center;
+  text-align: center;
 }
 
 .bubble {
-    display: block;
-    border: 5px solid #fff;
-    margin: 0 auto 30px;
-    border-radius: 50%;
-    overflow: hidden;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font-size: 80px;
-    line-height: 154px;
-    width: 154px;
-    height: 154px;
+  display: block;
+  border: 5px solid #fff;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 80px;
+  line-height: 154px;
+  width: 154px;
+  height: 154px;
 }
 
 @media screen and (min-width: 481px) {
-dl.is-row dd, dl.is-row dt {
+  dl.is-row dd, dl.is-row dt {
     text-align: left;
-}
+  }
 }
 
 @media screen and (min-width: 769px) {
-
-dl.is-row dd, dl.is-row dt {
+  dl.is-row dd, dl.is-row dt {
     text-align: center;
-}
+  }
 
-.col-4, .flow-module dl.is-row, .landing-bar dl, .features__container .features__item {
+  .col-4, .flow-module dl.is-row, .landing-bar dl, .features__container .features__item {
     display: inline;
     float: left;
     width: 33.3333333333%;
     margin: 0 0%;
     position: relative;
-}
+  }
 
-.col-4 .bubble, .flow-module dl.is-row .bubble, .landing-bar dl .bubble, .features__container .features__item .bubble {
+  .col-4 .bubble, .flow-module dl.is-row .bubble, .landing-bar dl .bubble, .features__container .features__item .bubble {
     line-height: 1.26em;
     width: 1.26em;
     height: 1.26em;
     font-size: 100px;
-}
-.col-3 .bubble, .features-module dl.is-row .bubble {
+  }
+  .col-3 .bubble, .features-module dl.is-row .bubble {
     font-size: 80px;
     line-height: 1.19em;
     width: 1.19em;
     height: 1.19em;
-}
+  }
 }
 
 @media screen and (min-width: 481px) and (min-width: 769px) {
-.col-4 .bubble, .flow-module dl.is-row .bubble, .landing-bar dl .bubble, .features__container .features__item .bubble {
+  .col-4 .bubble, .flow-module dl.is-row .bubble, .landing-bar dl .bubble, .features__container .features__item .bubble {
     line-height: 1.8em;
     width: 1.8em;
     height: 1.8em;
-}
+  }
 }
 
 @media screen and (min-width: 481px) {
@@ -73,26 +72,26 @@ dl.is-row dd, dl.is-row dt {
     height: 100px;
     text-align: center;
     font-size: 48px;
-}
+  }
 }
 
 .bubble.is-blue, .plans__module .bubble.btn {
-    background-color: #53bde0;
-    color: #fff;
+  background-color: #53bde0;
+  color: #fff;
 }
 
 a>span.bubble {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .bubble-arrow {
-    font-size: 80px;
-    padding-top: 30px;
-    color: #9994A3;
+  font-size: 80px;
+  padding-top: 30px;
+  color: #9994A3;
 }
 
 @media screen and (min-width: 769px) {
-.flow-module .bubble.arrow-after:after {
+  .flow-module .bubble.arrow-after:after {
     content: '\E014';
     font-size: .4em;
     color: #837c8d;
@@ -100,24 +99,24 @@ a>span.bubble {
     top: 0;
     right: -.5em;
     font-family: "wufoo-v4";
-}
+  }
 
-.flow-module dl:last-of-type .bubble:after {
+  .flow-module dl:last-of-type .bubble:after {
     content: '';
-}
+  }
 
-.bubble:before {
+  .bubble:before {
     top: .1em;
-}
+  }
 }
 
 .flow-module a {
   color: #28acd8;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    font-size: 24px;
-    font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-size: 24px;
+  font-weight: 300;
 
   &:hover {
     color: #e86f69;
@@ -127,23 +126,23 @@ a>span.bubble {
 
 .flow-module dd {
   color: #6D696E;
-      font-size: 18px;
-    font-weight: 300;
-    line-height: 28px;
-    padding: 0px 50px 100px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  padding: 0px 50px 100px;
 
-    @media screen and (max-width: 769px) {
-      padding: 0px 50px 20px;
-    }
+  @media screen and (max-width: 769px) {
+    padding: 0px 50px 20px;
+  }
 }
 
 #features a {
   color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    font-size: 24px;
-    font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-size: 24px;
+  font-weight: 300;
 
   &:hover {
     text-decoration: underline;
@@ -152,10 +151,10 @@ a>span.bubble {
 
 #features dd {
   color: #fff;
-      font-size: 18px;
-    font-weight: 300;
-    line-height: 28px;
-    padding: 0px 20px 50px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  padding: 0px 20px 50px;
 }
 
 #features .btn.btn-lg.btn-outline {
@@ -170,24 +169,22 @@ a>span.bubble {
 }
 
 .bubble:before {
-    position: relative;
-    -webkit-transition: all 300ms ease-in;
-    transition: all 300ms ease-in;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+  position: relative;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 
 .wrapper-2.is-red {
-    background-color: #374A81;
-    color: #fff;
+  background-color: #374A81;
+  color: #fff;
 }
 
-
-
 @media screen and (min-width: 769px) {
-.col-3, .features-module dl.is-row {
+  .col-3, .features-module dl.is-row {
     display: inline;
     float: left;
     width: 25%;
@@ -195,99 +192,103 @@ a>span.bubble {
     position: relative;
     text-align: center;
     padding: 0 1.667em;
-}
+  }
 }
 
 .features-module a {
-    color: #fff;
+  color: #fff;
 }
 
 @media screen and (min-width: 481px) {
-dl.is-row .bubble {
+  dl.is-row .bubble {
     float: left;
     margin-right: 50px;
-}
+  }
 }
 
 @media screen and (min-width: 769px) {
-dl.is-row .bubble {
+  dl.is-row .bubble {
     float: none;
     margin-right: auto;
-}
-.bubble:before {
+  }
+  .bubble:before {
     top: .1em;
-}
+  }
 }
 
 @media screen and (min-width: 481px) and (min-width: 769px) {
-.col-3 .bubble, .features-module dl.is-row .bubble {
+  .col-3 .bubble, .features-module dl.is-row .bubble {
     line-height: 1.7em;
     width: 1.7em;
     height: 1.7em;
-}
+  }
 }
 
 .wrapper-2 {
-    padding: 6em 0.667em;
-    overflow: hidden;
+  padding: 6em 0.667em;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 481px) {
-.wrapper-2 {
+  .wrapper-2 {
     padding: 0px 1.667em;
-}
+  }
 }
 
 
 .bubble:before {
-    position: relative;
-    -webkit-transition: all 300ms ease-in;
-    transition: all 300ms ease-in;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+  position: relative;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 .icon-painter11:before {
-    content: "";
+  content: "";
 }
 .icon-business68:before {
-    content: "";
+  content: "";
 }
 .icon-split4:before {
-    content: "";
+  content: "";
 }
 .icon-creditcard3:before {
-    content: "";
+  content: "";
 }
 .icon-form:before {
-    content: "";
+  content: "";
 }
 .icon-share4:before {
-    content: "";
+  content: "";
 }
 .icon-mobile26:before {
-    content: "";
+  content: "";
 }
 .icon-arrow-down:before {
-    content: "";
+  content: "";
 }
 .icon-check5:before, .landing dt:before, .icon-facebook:before, .icon-google:before, .icon-menu:before, .icon-login:before, .icon-linkedin:before, .icon-twitter:before, .icon-arrow-down:before, .icon-youtube:before, .icon-arrow-left:before, .icon-arrow-right:before, .icon-arrow-up:before, .icon-close:before, .icon-form:before, .icon-share4:before, .icon-dollars:before, .icon-profit:before, .icon-mobile26:before, .icon-expand22:before, .icon-right106:before, .icon-creditcard3:before, .icon-painter11:before, .icon-circle-check:before, .icon-split4:before, .icon-business68:before, .icon-check:before, .icon-star:before, .icon-heart:before, .icon-lock:before, .icon-discover:before, .icon-mastercard:before, .icon-visa:before, .icon-amex:before {
-    display: inline-block;
-    zoom: 1;
-    font-family: "wufoo-v4";
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    text-decoration: inherit;
-    -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  zoom: 1;
+  font-family: "wufoo-v4";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
 }
 
 .bubble.is-red {
-    background-color: #374A81;
-    color: #fff;
+  background-color: #374A81;
+  color: #fff;
 }
 a>span.bubble {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+#moreFeatBtn {
+  padding-bottom:100px
 }

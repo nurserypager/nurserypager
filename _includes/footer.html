@@ -23,29 +23,29 @@
         </div>
 
         <div class="footer-col col-2">
-          <h3>{{ footer.col-one.header}}</h3>
+          <h3 class="editable">{{ footer.col-one.header}}</h3>
           <ul>
         
             {% for item in footer.col-one.items %}
-            <li><a href="{{ item.url | prepend: site.baseurl }}" class="btn">{{ item.title }}</a></li>
+            <li><a href="{{ item.url | prepend: site.baseurl }}" class="btn editable">{{ item.title }}</a></li>
             {% endfor %}
         
           </ul>
         </div>
 
         <div class="footer-col col-3">
-          <h3>{{ footer.col-two.header}}</h3>
+          <h3 class="editable">{{ footer.col-two.header}}</h3>
           <ul class="footer-country">
         
             {% for item in footer.col-two.items %}
-            <li><a href="{{ item.url | prepend: site.baseurl }}" class="btn">{{ item.title }}</a></li>
+            <li><a href="{{ item.url | prepend: site.baseurl }}" class="btn editable">{{ item.title }}</a></li>
             {% endfor %}
         
           </ul>
 
           <ul class="no-bullets">
             {% for item in footer.col-three.items %}
-            <li><a href="{{ item.url | prepend: site.baseurl }}" class="btn">{{ item.title }}</a></li>
+            <li><a href="{{ item.url | prepend: site.baseurl }}" class="btn editable">{{ item.title }}</a></li>
             {% endfor %}
 
           </ul>
